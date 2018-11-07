@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Paige Mabbitt
+   Date: 11.7.18
+	
+   Filename: br_styles.css
+
+*/
+
+/* HTML */
+html {
+    background-image: url('picket-fences.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-image: url('br_paper.png');
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 10em;
+    text-align: right;
+}
+
+
+/* Nav */
+
+
+nav a {
+    display: inline-block;
+    margin: auto 3em;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
+}
+
+a:visited {
+    color: rgb(62, 81, 245);
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+
+/* Section */
+
+section {
+    background-image: url('paper-white.jpg');
+    width: 60%;
+    margin: auto;
+    box-shadow: rgb(51, 51, 51) 10px 10px 10px;
+    transform: translateY(150px) rotateY(45deg) rotateX(-10deg)
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 236, 172, 0.733);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 4em;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+nav#foot {
+    margin-top: 1.3em;
+}
