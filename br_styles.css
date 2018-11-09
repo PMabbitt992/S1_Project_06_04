@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Satisfy|Ubuntu');
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -16,9 +16,9 @@
 
 /* HTML */
 html {
-    background-image: url('picket-fences.jpg');
-    background-attachment: fixed;
+    background-color: rgba(62, 80, 245, 0.603);
     background-size: cover;
+    height: 2400px;
 }
 
 header {
@@ -27,6 +27,27 @@ header {
     border-bottom-left-radius: 30px;
     height: 10em;
     text-align: right;
+    box-shadow: rgb(51, 51, 51) 0px 10px 10px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.3em;
+}
+
+hr {
+    width: 65%;
+
+}
+
+img {
+    filter: saturate(200%);
+}
+
+address,
+p {
+    padding: 1.3em;
 }
 
 
@@ -53,24 +74,52 @@ a:active {
 /* Section */
 
 section {
-    background-image: url('paper-white.jpg');
     width: 60%;
     margin: auto;
-    box-shadow: rgb(51, 51, 51) 10px 10px 10px;
-    transform: translateY(150px) rotateY(45deg) rotateX(-10deg)
+    transform: translateY(150px);
+    background-color: rgba(250, 237, 197, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 60px;
+    background: linear-gradient(134deg, rgb(250, 237, 197), rgba(255, 253, 246, 0.438));
+}
+
+
+
+
+/* Aside */
+aside img {
+    margin: 3em 3em 0 3em;
+    border: 3px outset rgb(90, 90, 90);
+}
+
+aside img:last-of-type {
+    transform: translateX(13em);
+}
+
+aside figcaption {
+    float: left;
+    display: block;
+    margin: auto 8em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+aside figcaption:last-of-type {
+    float: none;
+    transform: translateX(13em);
 }
 
 /* Footer */
 footer {
-    background-color: rgba(255, 236, 172, 0.733);
+    background: radial-gradient(at center, rgb(250, 237, 197), rgba(250, 237, 197, 0.199));
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     height: 4em;
     width: 100%;
     text-align: center;
+    clear: both;
     position: fixed;
     bottom: 0;
     left: 0;
+
 }
 
 nav#foot {
